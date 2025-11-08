@@ -80,9 +80,8 @@ public class EdunityApp {
         System.out.println("1. Add New Student");
         System.out.println("2. View All Students");
         System.out.println("3. Search Student");
-        System.out.println("4. View Student Details");
-        System.out.println("5. Update Student");
-        System.out.println("6. Back to Main Menu");
+        System.out.println("4. Update Student");
+        System.out.println("5. Back to Main Menu");
 
         int choice = getIntInput("Enter your choice: ");
 
@@ -99,14 +98,9 @@ public class EdunityApp {
                 studentService.searchStudents(keyword);
                 break;
             case 4:
-                System.out.print("Enter student ID: ");
-                String studentId = scanner.nextLine();
-                studentService.displayStudentDetails(studentId);
-                break;
-            case 5:
                 updateStudent();
                 break;
-            case 6:
+            case 5:
                 return;
             default:
                 System.out.println("\nInvalid choice!");
@@ -157,9 +151,8 @@ public class EdunityApp {
         System.out.println("1. Add New Course");
         System.out.println("2. View All Courses");
         System.out.println("3. Search Course");
-        System.out.println("4. View Course Details");
-        System.out.println("5. Update Course");
-        System.out.println("6. Back to Main Menu");
+        System.out.println("4. Update Course");
+        System.out.println("5. Back to Main Menu");
 
         int choice = getIntInput("Enter your choice: ");
 
@@ -176,14 +169,9 @@ public class EdunityApp {
                 courseService.searchCourses(keyword);
                 break;
             case 4:
-                System.out.print("Enter course ID: ");
-                String courseId = scanner.nextLine();
-                courseService.displayCourseDetails(courseId);
-                break;
-            case 5:
                 updateCourse();
                 break;
-            case 6:
+            case 5:
                 return;
             default:
                 System.out.println("\nInvalid choice!");
@@ -239,8 +227,7 @@ public class EdunityApp {
         System.out.println("2. View All Payments");
         System.out.println("3. View Payments by Student");
         System.out.println("4. View Payments by Course");
-        System.out.println("5. View Payment Details");
-        System.out.println("6. Back to Main Menu");
+        System.out.println("5. Back to Main Menu");
 
         int choice = getIntInput("Enter your choice: ");
 
@@ -262,11 +249,6 @@ public class EdunityApp {
                 paymentService.displayPaymentsByCourse(courseId);
                 break;
             case 5:
-                System.out.print("Enter payment ID: ");
-                String paymentId = scanner.nextLine();
-                paymentService.displayPaymentDetails(paymentId);
-                break;
-            case 6:
                 return;
             default:
                 System.out.println("\nInvalid choice!");
@@ -294,8 +276,7 @@ public class EdunityApp {
         System.out.println("2. View All Attendance");
         System.out.println("3. View Attendance by Student");
         System.out.println("4. View Attendance by Course");
-        System.out.println("5. View Attendance Record Details");
-        System.out.println("6. Back to Main Menu");
+        System.out.println("5. Back to Main Menu");
 
         int choice = getIntInput("Enter your choice: ");
 
@@ -317,11 +298,6 @@ public class EdunityApp {
                 attendanceService.displayAttendanceByCourse(courseId);
                 break;
             case 5:
-                System.out.print("Enter record ID: ");
-                String recordId = scanner.nextLine();
-                attendanceService.displayAttendanceDetails(recordId);
-                break;
-            case 6:
                 return;
             default:
                 System.out.println("\nInvalid choice!");

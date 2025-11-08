@@ -81,20 +81,4 @@ public class CourseService {
             System.out.println("\nCourse not found!");
         }
     }
-
-    public void displayCourseDetails(String courseId) {
-        Course course = findCourseById(courseId);
-        if (course != null) {
-            System.out.println("\n=== Course Details ===");
-            System.out.println("Course ID: " + course.getCourseId());
-            System.out.println("Course Name: " + course.getCourseName());
-            System.out.println("Subject Area: " + course.getSubjectArea());
-            System.out.println("Tuition Fee: $" + course.getTuitionFee());
-            System.out.println("Class Schedule: " + course.getClassSchedule());
-            System.out.println("Instructor Name: " + course.getInstructorName());
-        } else {
-            System.out.println("\nCourse not found!");
-        }
-    }
-
 }

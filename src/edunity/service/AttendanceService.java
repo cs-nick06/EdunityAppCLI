@@ -78,22 +78,4 @@ public class AttendanceService {
             }
         }
     }
-
-    public void displayAttendanceDetails(String recordId) {
-        for (Attendance record : attendanceRecords) {
-            if (record.getRecordId().equalsIgnoreCase(recordId)) {
-                System.out.println("\n=== Attendance Record Details ===");
-                System.out.println("Record ID: " + record.getRecordId());
-                System.out.println("Student ID: " + record.getStudentId());
-                System.out.println("Course ID: " + record.getCourseId());
-                System.out.println("Date: " + record.getAttendanceDate());
-                System.out.println("Status: " + (record.isWasPresent() ? "Present" : "Absent"));
-                System.out.println("Notes: " + record.getNotes());
-                return;
-            }
-        }
-        System.out.println("\nAttendance record not found!");
-    }
-
 }
-

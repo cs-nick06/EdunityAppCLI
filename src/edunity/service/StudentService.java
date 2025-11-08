@@ -80,20 +80,4 @@ public class StudentService {
             System.out.println("\nStudent not found!");
         }
     }
-
-    public void displayStudentDetails(String studentId) {
-        Student student = findStudentById(studentId);
-        if (student != null) {
-            System.out.println("\n=== Student Details ===");
-            System.out.println("Student ID: " + student.getId());
-            System.out.println("Full Name: " + student.getFullName());
-            System.out.println("Phone: " + student.getPhone());
-            System.out.println("Email Address: " + student.getEmailAddress());
-            System.out.println("Enrolled On: " + student.getEnrolledOn());
-            System.out.println("Current Grade: " + student.getCurrentGrade());
-        } else {
-            System.out.println("\nStudent not found!");
-        }
-    }
-
 }

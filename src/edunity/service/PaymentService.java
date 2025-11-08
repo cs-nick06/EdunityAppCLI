@@ -74,21 +74,4 @@ public class PaymentService {
             }
         }
     }
-    public void displayPaymentDetails(String paymentId) {
-        for (Payment payment : payments) {
-            if (payment.getPaymentId().equalsIgnoreCase(paymentId)) {
-                System.out.println("\n=== Payment Record Details ===");
-                System.out.println("Payment ID: " + payment.getPaymentId());
-                System.out.println("Student ID: " + payment.getStudentId());
-                System.out.println("Course ID: " + payment.getCourseId());
-                System.out.println("Amount Paid: $" + payment.getAmountPaid());
-                System.out.println("Transaction Date: " + payment.getTransactionDate());
-                System.out.println("Payment Method: " + payment.getPaymentMethod());
-                System.out.println("Payment Month: " + payment.getPaymentMonth());
-                return;
-            }
-        }
-        System.out.println("\nPayment record not found!");
-    }
-
 }
