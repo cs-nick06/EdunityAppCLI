@@ -1,5 +1,4 @@
 package edunity.ui;
-
 import edunity.storage.DataStorage;
 import edunity.model.Course;
 import edunity.model.Student;

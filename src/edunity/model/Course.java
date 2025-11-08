@@ -1,5 +1,4 @@
 package edunity.model;
-
 import java.io.Serializable;
 
 /**
