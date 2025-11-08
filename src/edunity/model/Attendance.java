@@ -3,6 +3,10 @@ import java.io.Serializable;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
+/**
+ * Records student attendance for courses.
+ * Tracks attendance ID, student, course, date, presence status, and remarks.
+ */
 
 public class Attendance implements Serializable {
     private String recordId;

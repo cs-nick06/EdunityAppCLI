@@ -8,6 +8,10 @@ import edunity.model.Student;
 import java.io.*;
 import java.util.*;
 
+/**
+ * Handles data persistence using file-based storage.
+ * Saves and loads students, courses, payments, and attendance records.
+ */
 
 public class DataStorage {
     private static final String DATA_DIR = "data";

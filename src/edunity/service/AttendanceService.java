@@ -5,6 +5,10 @@ import edunity.storage.DataStorage;
 import java.util.*;
 import java.util.stream.Collectors;
 
+/**
+ * Manages attendance tracking system.
+ * Records and retrieves attendance information for students and courses.
+ */
 
 public class AttendanceService {
     private List<Attendance> attendanceRecords;

@@ -6,6 +6,10 @@ import edunity.model.Payment;
 import java.util.*;
 import java.util.stream.Collectors;
 
+/**
+ * Manages payment processing and tracking.
+ * Handles payment records, history, and student payment lookups.
+ */
 
 public class PaymentService {
     private List<Payment> payments;

@@ -2,6 +2,10 @@ package edunity.model;
 
 import java.io.Serializable;
 
+/**
+ * Represents a course offered in the system.
+ * Includes course details like ID, name, subject, fees, schedule, and instructor.
+ */
 
 public class Course implements Serializable {
     private String courseId;

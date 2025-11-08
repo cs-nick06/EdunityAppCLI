@@ -4,6 +4,10 @@ import java.io.Serializable;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
+/**
+ * Tracks payment records for student transactions.
+ * Stores payment ID, student ID, course ID, amount, date, method, and payment month.
+ */
 
 public class Payment implements Serializable {
     private String paymentId;

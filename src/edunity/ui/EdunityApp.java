@@ -9,6 +9,10 @@ import edunity.service.PaymentService;
 import edunity.service.StudentService;
 import java.util.*;
 
+/**
+ * Main application class for the Edunity Management System.
+ * Provides a console-based menu interface for managing students, courses, payments, and attendance.
+ */
 
 public class EdunityApp {
     private StudentService studentService;

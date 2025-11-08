@@ -4,6 +4,10 @@ import java.io.Serializable;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
+/**
+ * Represents a student enrolled in the system.
+ * Tracks basic info like name, contact details, enrollment date, and current grade.
+ */
 
 public class Student implements Serializable {
     private String id;

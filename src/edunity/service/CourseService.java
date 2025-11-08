@@ -5,7 +5,10 @@ import edunity.storage.DataStorage;
 import java.util.*;
 import java.util.stream.Collectors;
 
-
+/**
+ * Manages course-related operations.
+ * Handles adding, updating, displaying, and finding courses.
+ */
 public class CourseService {
     private List<Course> courses;
     private DataStorage storage;

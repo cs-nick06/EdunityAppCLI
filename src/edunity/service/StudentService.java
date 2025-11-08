@@ -5,6 +5,10 @@ import edunity.storage.DataStorage;
 import java.util.*;
 import java.util.stream.Collectors;
 
+/**
+ * Manages student-related operations.
+ * Handles adding, updating, displaying, and finding students.
+ */
 
 public class StudentService {
     private List<Student> students;
